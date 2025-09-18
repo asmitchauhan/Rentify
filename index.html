@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rentify - Premium Rentals for Everything</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2>Rentify</h2>
+                    <span class="logo-tagline">Premium Rentals</span>
+                </div>
+                
+                <div class="nav-search">
+                    <input type="text" id="search-input" placeholder="Search for anything to rent...">
+                    <button id="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+                
+                <div class="nav-actions">
+                    <button class="nav-btn" id="wishlist-btn">
+                        <i class="fas fa-heart"></i>
+                        <span class="nav-btn-text">Wishlist</span>
+                        <span class="badge" id="wishlist-count">0</span>
+                    </button>
+                    <button class="nav-btn" id="cart-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="nav-btn-text">Cart</span>
+                        <span class="badge" id="cart-count">0</span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="category-nav">
+            <div class="category-container">
+                <button class="category-btn active" data-category="all">All Items</button>
+                <button class="category-btn" data-category="watches">Luxury Watches</button>
+                <button class="category-btn" data-category="cars">Luxury Cars</button>
+                <button class="category-btn" data-category="electronics">Electronics</button>
+                <button class="category-btn" data-category="furniture">Furniture</button>
+                <button class="category-btn" data-category="jewelry">Jewelry</button>
+                <button class="category-btn" data-category="fashion">Fashion</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Rent Anything, Experience Everything</h1>
+                <button class="hero-cta">Explore Rentals</button>
+            </div>
+        </section>
+
+        <section class="featured-categories">
+            <div class="container">
+                <h2 class="section-title">Popular Categories</h2>
+                <div class="category-grid">
+                    <div class="category-card" data-category="watches">
+                        <img src="https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Luxury Watches">
+                        <h3>Luxury Watches</h3>
+                        <p>Premium timepieces from top brands</p>
+                    </div>
+                    <div class="category-card" data-category="cars">
+                        <img src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Luxury Cars">
+                        <h3>Luxury Cars</h3>
+                        <p>Sports cars and luxury vehicles</p>
+                    </div>
+                    <div class="category-card" data-category="electronics">
+                        <img src="https://images.unsplash.com/photo-1468495244123-6c6c332eeece?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Electronics">
+                        <h3>Electronics</h3>
+                        <p>Latest tech and gadgets</p>
+                    </div>
+                    <div class="category-card" data-category="jewelry">
+                        <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Jewelry">
+                        <h3>Jewelry</h3>
+                        <p>Exquisite jewelry and accessories</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="products-section">
+            <div class="container">
+                <div class="products-header">
+                    <h2 class="section-title">Available for Rent</h2>
+                    <div class="filters">
+                        <select id="sort-select">
+                            <option value="featured">Featured</option>
+                            <option value="price-low">Price: Low to High</option>
+                            <option value="price-high">Price: High to Low</option>
+                            <option value="newest">Newest First</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="products-grid" id="products-grid">
+                    <!-- Products will be dynamically loaded here -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <h3>Rentify</h3>
+                    <p>Premium rentals for everything you need</p>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Categories</h4>
+                <ul>
+                    <li><a href="#">Luxury Watches</a></li>
+                    <li><a href="#">Luxury Cars</a></li>
+                    <li><a href="#">Electronics</a></li>
+                    <li><a href="#">Furniture</a></li>
+                    <li><a href="#">Jewelry</a></li>
+                    <li><a href="#">Fashion</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Rental Guidelines</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <div class="contact-info">
+                    <p><i class="fas fa-envelope"></i> support@rentify.com</p>
+                    <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Mumbai, Maharashtra, India</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <p>&copy; 2024 Rentify. All rights reserved.</p>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                    <i class="fas fa-university"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Sidebar -->
+    <div class="sidebar" id="cart-sidebar">
+        <div class="sidebar-header">
+            <h3>Shopping Cart</h3>
+            <button class="close-sidebar" id="close-cart"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="sidebar-content" id="cart-items">
+            <div class="empty-state">
+                <i class="fas fa-shopping-cart"></i>
+                <p>Your cart is empty</p>
+            </div>
+        </div>
+        <div class="sidebar-footer" id="cart-footer" style="display: none;">
+            <div class="cart-total">
+                <span>Total: $<span id="cart-total">0</span>/day</span>
+            </div>
+            <button class="checkout-btn" id="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <!-- Wishlist Sidebar -->
+    <div class="sidebar" id="wishlist-sidebar">
+        <div class="sidebar-header">
+            <h3>Wishlist</h3>
+            <button class="close-sidebar" id="close-wishlist"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="sidebar-content" id="wishlist-items">
+            <div class="empty-state">
+                <i class="fas fa-heart"></i>
+                <p>Your wishlist is empty</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Modal -->
+    <div class="modal" id="product-modal">
+        <div class="modal-content">
+            <button class="modal-close" id="close-modal"><i class="fas fa-times"></i></button>
+            <div class="modal-body" id="modal-body">
+                <!-- Product details will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Checkout Modal -->
+    <div class="modal" id="checkout-modal">
+        <div class="modal-content checkout-modal-content">
+            <button class="modal-close" id="close-checkout-modal"><i class="fas fa-times"></i></button>
+            <div class="checkout-container">
+                <h2>Complete Your Rental</h2>
+                <div class="checkout-steps">
+                    <div class="step active" data-step="1">
+                        <span class="step-number">1</span>
+                        <span class="step-label">Rental Details</span>
+                    </div>
+                    <div class="step" data-step="2">
+                        <span class="step-number">2</span>
+                        <span class="step-label">Personal Info</span>
+                    </div>
+                    <div class="step" data-step="3">
+                        <span class="step-number">3</span>
+                        <span class="step-label">Payment</span>
+                    </div>
+                </div>
+                <div class="checkout-content" id="checkout-content">
+                    <!-- Checkout steps will be loaded here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
