@@ -4,7 +4,7 @@ const products = [
         id: 1,
         name: "Rolex Submariner",
         category: "watches",
-        price: 12500,
+        price: 2498,
         image: "attached_assets/stock_images/luxury_rolex_watch_o_aae01201.jpg",
         description: "Iconic luxury diving watch with exceptional craftsmanship and timeless design.",
         featured: true
@@ -13,7 +13,7 @@ const products = [
         id: 2,
         name: "Ferrari 488 GTB",
         category: "cars",
-        price: 100000,
+        price: 50000,
         image: "attached_assets/stock_images/red_ferrari_sports_c_543791a2.jpg",
         description: "High-performance Italian sports car with breathtaking acceleration and style.",
         featured: true
@@ -22,7 +22,7 @@ const products = [
         id: 3,
         name: "MacBook Pro 16\"",
         category: "electronics",
-        price: 6500,
+        price: 4000,
         image: "attached_assets/stock_images/apple_macbook_pro_la_4b7d6eff.jpg",
         description: "Professional laptop with M2 Pro chip, perfect for creative professionals.",
         featured: true
@@ -31,7 +31,7 @@ const products = [
         id: 4,
         name: "Diamond Tennis Necklace",
         category: "jewelry",
-        price: 25000,
+        price: 5000,
         image: "attached_assets/stock_images/diamond_necklace_jew_76dddd81.jpg",
         description: "Exquisite diamond necklace with brilliant cut stones and elegant design.",
         featured: true
@@ -40,7 +40,7 @@ const products = [
         id: 5,
         name: "Designer Leather Sofa",
         category: "furniture",
-        price: 10000,
+        price: 1000,
         image: "attached_assets/stock_images/designer_leather_sof_0c2e531b.jpg",
         description: "Premium Italian leather sofa with contemporary design and superior comfort.",
         featured: false
@@ -49,7 +49,7 @@ const products = [
         id: 6,
         name: "Lamborghini Huracán",
         category: "cars",
-        price: 125000,
+        price: 40000,
         image: "attached_assets/stock_images/lamborghini_yellow_s_9eb2eebf.jpg",
         description: "Exotic supercar with V10 engine and stunning performance capabilities.",
         featured: true
@@ -58,7 +58,7 @@ const products = [
         id: 7,
         name: "Omega Seamaster",
         category: "watches",
-        price: 10000,
+        price: 3000,
         image: "https://images.unsplash.com/photo-1594534475808-b18fc33b045e?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
         description: "Professional diving watch with Co-Axial movement and ceramic bezel.",
         featured: false
@@ -67,7 +67,7 @@ const products = [
         id: 8,
         name: "Sony A7R V Camera",
         category: "electronics",
-        price: 7500,
+        price: 1500,
         image: "https://images.unsplash.com/photo-1502920917128-1aa500764cbd?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
         description: "High-resolution mirrorless camera with advanced autofocus system.",
         featured: false
@@ -76,7 +76,7 @@ const products = [
         id: 9,
         name: "Cartier Love Bracelet",
         category: "jewelry",
-        price: 16500,
+        price: 1500,
         image: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
         description: "Iconic gold bracelet symbolizing eternal love with distinctive design.",
         featured: false
@@ -85,7 +85,7 @@ const products = [
         id: 10,
         name: "Herman Miller Chair",
         category: "furniture",
-        price: 5000,
+        price: 1000,
         image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
         description: "Ergonomic office chair with premium materials and superior comfort.",
         featured: false
@@ -94,7 +94,7 @@ const products = [
         id: 11,
         name: "Designer Evening Gown",
         category: "fashion",
-        price: 15000,
+        price: 1500,
         image: "https://images.unsplash.com/photo-1753550577438-63a3dac4bced?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         description: "Elegant designer gown perfect for special occasions and events.",
         featured: false
@@ -103,7 +103,7 @@ const products = [
         id: 12,
         name: "Porsche 911 Turbo",
         category: "cars",
-        price: 83000,
+        price: 35000,
         image: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
         description: "Legendary sports car with turbo engine and exceptional handling.",
         featured: true
